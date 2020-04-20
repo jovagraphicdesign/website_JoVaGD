@@ -1,8 +1,7 @@
 // @import "~bootstrap/scss/bootstrap";
 // import uw bijkomende scss van andere frameworks zoals bootstrap
 
-h1{
-    font-weight: bold;
-    color: goldenrod;
-
-}
+$fa-font-path: '~@fortawesome/fontawesome-free/webfonts'; 
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+@import '~@fortawesome/fontawesome-free/scss/solid';
+@import '~@fortawesome/fontawesome-free/scss/regular';

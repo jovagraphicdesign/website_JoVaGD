@@ -10,9 +10,17 @@ module.exports = {
             template: "./src/index.html" // this generate index.htlm
         }),
         new HtmlWebpackPlugin({  // Also generate a test.html edit filename | add more 
-            filename: 'test.html',
-            template: 'src/test.html'
-          })
+            filename: 'about.html',
+            template: 'src/about.html'
+        }),
+        new HtmlWebpackPlugin({ 
+            filename: 'contact.html',
+            template: 'src/contact.html'
+        }),    
+        new HtmlWebpackPlugin({ 
+            filename: 'work.html',
+            template: 'src/work.html'
+        })        
     ],
     module: {
         rules: [

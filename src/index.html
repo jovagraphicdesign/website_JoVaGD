@@ -7,21 +7,32 @@
 </head>
 <body data-barba="wrapper">
 
+    <ul class="transition">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+
     <div class="wrapper">
         <header>
             <nav>
                 <div class="logo">
                     <h1>JoVa Graphic Design</h1>
                 </div>
-                <ul class="menu">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Work</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">contact</a></li>
-                </ul>
+                
+                <div class="toggleIcon" onclick="menuToggle()"></div>
             </nav>
         </header>
-        
+        <div class="menu_overlay">
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Work</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>    
+        </div>
         <main data-barba="container" data-barba-namespace="home">
             <div class="left">
                 <h1 class="title">Hi,<br>I'm Johan,<br>web developer.</h1>

@@ -1,11 +1,36 @@
 header{
+    
     nav{
         display: flex;
         justify-content: space-between;
         margin: 0 20px;
+        .logo{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+            margin-top: 20px;
+            img{
+                height: 100%;
+            }
+            .haak-groen{
+                transform: translateX(50%);
+            }
+            .haak-wit{
+                transform: translateX(-50%);
+            }
+            p{
+                color: $white;
+                font-size: 1.5em;
+
+                span {
+                    font-size: 0.9em;
+                    font-weight: 100;
+                }
+            }
+        }
         .toggleIcon{
             position: relative;
-
             display: flex;
             justify-content: center;
             align-items: center;
@@ -66,8 +91,9 @@ header{
     justify-content: center;
     align-items: center;
     overflow-y: auto;
-    transform: scale(0);
-    transition: 0.5s;
+    //transform: scale(1);
+    transform: translateX(100%);
+    transition: 1.5s;
 
     ul{
         position: relative;
@@ -112,5 +138,6 @@ header{
         }
 }
 .menu_overlay.active{
-    transform: scale(1);
+    //transform: scale(1);
+    transform: translateX(0%);
 }

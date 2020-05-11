@@ -1,0 +1,27 @@
+.home_wrapper{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    .left{
+        height: 100vh;
+        background-color: #ff1;
+        h1.title{
+            color: $white;
+            font-size: 3.2em;
+            font-weight: 700;
+        }
+        h4{
+            color: $light-green;
+            font-weight: 200;
+        }
+    }
+    .right{
+        height: 100vh;
+
+        img{
+            height: 30%;
+            position: absolute;
+        }
+    }
+}

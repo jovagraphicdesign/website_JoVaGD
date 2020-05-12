@@ -1,0 +1,22 @@
+.about_wrapper{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    .content{
+        width: 50%;
+        color: $white;
+        height: 60vh;
+        background-color: yellow;
+    }
+    .logo_animation{
+        width: 50%;
+        height: 60vh;
+        background-color: yellowgreen;
+        img{
+            height: 50%;
+            position: absolute;
+        }
+    }
+}

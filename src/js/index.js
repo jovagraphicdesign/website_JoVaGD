@@ -23,7 +23,7 @@ MenuBtn.addEventListener('click', ()=>{
 
 ctaAbout.addEventListener('mouseover', ()=>{
     ctaTouch.style.background='#3FBF9B';
-    ctaAbout.style.background ='#4BF2B5'
+    ctaAbout.style.background ='#4BF2B5';
 });
 ctaAbout.addEventListener('mouseout', ()=>{
     ctaTouch.style.background='#4BF2B5';

@@ -5,8 +5,11 @@
 
     .left{
         height: 100vh;
-        background-color: #ff1;
+        position: relative;
+        padding: 5px;
         h1.title{
+            position: relative;
+            top: 20%;
             color: $white;
             font-size: 3.2em;
             font-weight: 700;
@@ -14,11 +17,42 @@
         h4{
             color: $light-green;
             font-weight: 200;
+            position: relative;
+            top: 21%;
         }
+        
+        .cta_wrapper{
+            position: relative;
+            top: 23%;
+            
+            .cta{
+                text-decoration: none;
+                display: inline-block;
+                color: $bg_color;
+                padding: 10px 20px;
+                transition: 0.5s background;
+            }
+            
+            .cta_touch{
+                background: $light-green;
+            }
+            
+            .cta_about{
+                background: $dark_green;
+                margin-left: -3px;
+            }
+            
+            
+            
+            
+
+        }
+        
+
     }
     .right{
         height: 100vh;
-
+        background-color: gray;
         img{
             height: 30%;
             position: absolute;

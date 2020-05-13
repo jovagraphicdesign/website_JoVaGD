@@ -23,3 +23,11 @@ body{
     background-color: $bg_color;
     // overflow: hidden;
 }
+
+.cta{
+    text-decoration: none;
+    display: inline-block;
+    color: $bg_color;
+    padding: 10px 20px;
+    transition: 0.5s background;
+}

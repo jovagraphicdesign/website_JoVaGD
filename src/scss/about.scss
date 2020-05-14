@@ -2,12 +2,13 @@
     display: flex;
     width: 100%;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: flex-start;
     flex-wrap: wrap;
+    height: 70vh;
     .content{
         width: 50%;
         color: $white;
-        height: 60vh;
+        height: 50vh;
         padding: 5px;
         display: flex;
         flex-direction: column;
@@ -21,7 +22,7 @@
     }
     .logo_animation{
         width: 50%;
-        height: 60vh;
+        height: 50vh;
         position: relative;
         display: flex;
         align-items: center;
@@ -54,8 +55,19 @@
     }
 }
 
-@media only screen and (max-width:680px){
+@media only screen and (max-width:704px){
     .about_wrapper{
-        flex-direction: column;
+        .content{
+            width: 100%;
+        }
+       
+        
+        .logo_animation{
+            align-items: flex-start;
+            img{
+                height: 30%;
+            }
+            
+        }
     }
 }

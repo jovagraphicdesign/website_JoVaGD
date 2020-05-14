@@ -26,8 +26,12 @@ body{
 
 .cta{
     text-decoration: none;
+    position: relative;
     display: inline-block;
     color: $bg_color;
+    width: 160px;
     padding: 10px 20px;
     transition: 0.5s background;
+    margin: 0;
+    text-align: center;
 }

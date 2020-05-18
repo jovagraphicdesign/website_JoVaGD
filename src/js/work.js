@@ -1,10 +1,18 @@
 console.log('hi motherfucker for about');
+
+import img1 from '../assets/woman.jpg';
+import img2 from '../assets/woman2.jpg';
+
+
+const images = [img1, img2];
+
 const workList = document.querySelectorAll('.work-list>li>a');
-const workImgContColor = "linear-gradient(0deg, rgba(19, 38, 64, 0.7), rgba(19, 38, 64, 0.7))";
+const workImgContColor = "linear-gradient(0deg, rgba(19, 38, 64, 0.9), rgba(19, 38, 64, 0.9))";
 const workContainer = document.querySelector(".img-container");
 const Urlproject_1 = "../assets/woman.jpg"
 const red = "red"
 console.log(workList);
+console.log(images);
 
 workList.forEach(
     function(listItem, index){
@@ -21,10 +29,11 @@ workList.forEach(
 
 function ProjectDetails (dataProject, index){
     
-    let item = index +1
+    const item = images[index];
     console.log(dataProject, item) ;
     //let urlStr = "Url"+dataProject;
     //console.log(urlStr);
-    workContainer.style.background = `${workImgContColor}, url(${Urlproject_1})`;
+    workContainer.style.background = `${workImgContColor}, url(${item})`;
+    workContainer.style.backgroundSize = 'cover';
     
 }

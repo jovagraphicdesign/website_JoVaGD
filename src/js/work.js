@@ -3,6 +3,7 @@ const workList = document.querySelectorAll('.work-list>li>a');
 const workImgContColor = "linear-gradient(0deg, rgba(19, 38, 64, 0.7), rgba(19, 38, 64, 0.7))";
 const workContainer = document.querySelector(".img-container");
 const Urlproject_1 = "../assets/woman.jpg"
+const red = "red"
 console.log(workList);
 
 workList.forEach(
@@ -24,6 +25,6 @@ function ProjectDetails (dataProject, index){
     console.log(dataProject, item) ;
     //let urlStr = "Url"+dataProject;
     //console.log(urlStr);
-    workContainer.style.background = 'red';
+    workContainer.style.background = `${workImgContColor}, url(${Urlproject_1})`;
     
 }

@@ -54,26 +54,22 @@
                     &:hover::before{
                         width: 90px;
                     }
-
-                    &::after{
-                        content: "project category";
-                        position: absolute;
-                        margin-top: .9em;
-                        transform: scaleX(0);
-                        opacity: 0;
-                        font-size: .7em;
-                        color: $white;
-                        transition: all .8s ease-in;
-                        transform-origin: left;
-                    }
-
-                    &:hover::after{
-                        opacity: 1;
-                        transform-origin: left;
-                        transform: scaleX(1);
-                        transform: translateX(6px);
-                    }
                 }
+                .category{
+                    color: $white;
+                    font-size: .7em;
+                    //line-height: .7em;
+                    position: relative;
+                    white-space: nowrap;
+                    opacity: 1;
+                    overflow: hidden;
+                    width: auto;
+                    max-width: 0%;
+                    transition: max-width 1s linear;
+                }
+                
+                
+                
             }
         }
     }

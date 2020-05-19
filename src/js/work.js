@@ -19,11 +19,11 @@ workList.forEach(
         
         listItem.addEventListener('mouseover', (e) => {
             ProjectDetails(e.target.getAttribute('data-project'),index);
-            category[index].style.maxWidth = "100%";
+            category[index].style.opacity = "1";
         });
         listItem.addEventListener('mouseout', () =>{
             workContainer.style.background = workImgContColor;
-            // category[index].style.opacity = "0";
+            category[index].style.opacity = "0";
         })
     }
 );

@@ -60,12 +60,10 @@
                     font-size: .7em;
                     //line-height: .7em;
                     position: relative;
-                    white-space: nowrap;
-                    opacity: 1;
+                    opacity: 0;
                     overflow: hidden;
                     width: auto;
-                    max-width: 0%;
-                    transition: max-width 1s linear;
+                    transition: all .5s linear;
                 }
                 
                 

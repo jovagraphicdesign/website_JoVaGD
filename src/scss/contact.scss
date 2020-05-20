@@ -1,44 +1,70 @@
+::placeholder{
+    color: $bg_color;
+    opacity: 1;
+}
 .contact_wrapper{
-    height: 90vh;
+    height: 80vh;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    border: 2px solid $dark_green;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 3%;
+    
 
     .left{
-        width: 40%;
+        width: 90%;
+        height: 20%;
         h1{
-            color: $white;
+            color: $light_green;
+            margin-bottom: 15px;
         }
         p{
             color: $white;
+            width: 100%;
         }
     }
     
     .right{
-        width: 60%;
-        border: 2px solid $dark_green;
-        height: 70%;
+        width: 90%;
+        height: 80%;
         form{
             display: flex;
             flex-wrap: wrap;
-            padding: 15px;
+            justify-content: space-between;
             
             input{
-                width: 45%;
+                width: 48%;
+                margin-bottom: 2%;
                 height: 50px;
-                background-color: $bg_color_input;
+                background-color: rgba(255,255,255,0.12);
                 border: none;
-                margin-bottom: 5px;
-                margin-right: 5px;
                 font-size: 1em;
-                color: $white;
+                color: $bg_color;
+                padding-left: 5px;
+                padding-right: 5px;
             }
             textarea{
                 width: 100%;
-                background-color: $bg_color_input;
+                background-color:  rgba(255,255,255,0.12);
                 border: none;
                 margin-bottom: 5px;
                 font-size: 1em;
                 color: $white;
+                padding: 5px;
             }
+            button{
+                background: rgba(255,255,255,0.12);
+                padding: 15px 50px;
+                font-size: 1em;
+                color: $light_green;
+                border: none;
+                margin-top: 2%;
+            }
+
         }
     }
 }

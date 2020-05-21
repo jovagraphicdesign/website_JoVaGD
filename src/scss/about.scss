@@ -57,17 +57,65 @@
 
 @media only screen and (max-width:704px){
     .about_wrapper{
+        height: 60vh;
         .content{
             width: 100%;
+            height: 40vh;
+            p{
+                width: 90%;
+                font-size: .8em;
+
+            }
         }
        
         
         .logo_animation{
             align-items: flex-start;
+            margin-bottom: 50px;
             img{
                 height: 30%;
             }
             
         }
+    }
+    .cta_wrapper{
+        .cta_left{
+            h2{
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:320px){
+    .about_wrapper{
+        height: 50vh;
+        .content{
+            p{
+                width: 100%;
+                font-size: .8em;
+
+            }
+        }
+        .logo_animation{
+            visibility: hidden;
+        }
+        
+    }
+    .cta_wrapper{
+        position: relative;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        .cta_right{
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+            .cta_work{
+                margin-left: 0;
+            }
+        }
+
     }
 }

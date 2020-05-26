@@ -29,34 +29,31 @@
             li{
                 float: left;
                 width: 50%;
-                margin-bottom: 80px;    
-
+                margin-bottom: 80px; 
+                
                 a{
                     color: $white;
                     text-decoration: none;
                     font-size: 1.2em;
                     transition: .5s ease-in-out background;
-
-                    &:hover{
-                        color: $light_green;
-                    }
+                    position: relative;
+                    
                     &::before{
                         position: absolute;
-                        margin-top: .4em;
-                        transform: translateX(80px);
+                        top: .6em;
                         content: '';
                         height: 2px;
-                        width: 0px;
-                        background-color: $light-green;
+                        width: 0%;
+                        background-color: $dark-green;
                         transition: width .8s ease-in;
                     }
 
                     &:hover::before{
-                        width: 90px;
+                       width: 100%;
                     }
                 }
                 .category{
-                    color: $white;
+                    color: $dark-green;
                     font-size: .7em;
                     //line-height: .7em;
                     position: relative;

@@ -7,7 +7,8 @@ module.exports = {
         home: "./src/js/home.js",
         about: "./src/js/about.js",
         work: "./src/js/work.js",
-        contact: "./src/js/contact.js"
+        contact: "./src/js/contact.js",
+        project: ".src/js/project.js"
 
     },
     plugins: [
@@ -30,6 +31,11 @@ module.exports = {
             filename: 'work.html',
             template: 'src/work.html',
             chunks: ['main', 'work']
+        }),        
+        new HtmlWebpackPlugin({ 
+            filename: 'projectv&v.html',
+            template: 'src/projectv&v.html',
+            chunks: ['main', 'project']
         })        
     ],
     module: {

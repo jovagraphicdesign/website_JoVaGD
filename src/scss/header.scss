@@ -80,6 +80,32 @@ header{
                 transform: rotate(-45deg) translate(35px, 35px);
             }
         }
+        .backIcon{  
+            color: $light_green;
+            width: 80px;
+            height: 80px;
+            display: flex;
+
+            .back{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-decoration: none;
+                color: $light_green;
+
+                .fas{
+                    font-size: 1.8em; 
+                    line-height: 1.8em;
+                    margin-right: 10px;
+                 }
+                 span{
+                     font-size: 1em;
+                     line-height: 1.8em;
+                         
+                 }
+            }
+            
+        }
     }
 }
 

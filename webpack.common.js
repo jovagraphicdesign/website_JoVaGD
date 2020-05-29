@@ -8,7 +8,7 @@ module.exports = {
         about: "./src/js/about.js",
         work: "./src/js/work.js",
         contact: "./src/js/contact.js",
-        project: ".src/js/project.js"
+        project: "./src/js/project.js"
 
     },
     plugins: [

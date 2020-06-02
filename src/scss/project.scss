@@ -58,3 +58,23 @@
 
     }
 }
+
+
+@media only screen and (max-width:375px){
+    .cta_wrapper{
+        position: relative;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        .cta_right{
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+            .cta_work{
+                margin-left: 0;
+            }
+        }
+
+    }
+}
